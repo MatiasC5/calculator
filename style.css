@@ -17,12 +17,9 @@ body {
 
 
 .calculator {
-    padding: 15px;
-    border-radius: 30px;
-
+    width: 400px;
+    height: 700px;
 }
-
-
 
 .display{
     display: flex;
@@ -33,27 +30,26 @@ body {
     align-items: flex-end;
     text-align: right;
     color: rgb(17, 17, 17);
-    margin: 5px;
     padding: 10px;
-    height: 100px;
+    height: 200px;
     font-size: 30px;
-    border-radius: 30px
 }
 
 .buttons{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 97px);
     width: 232px;
+    gap: 4px;
 }
 
 button {
    border: none;
-   margin: 4px;
-   width: 50px;
-   height: 50px;
-   border-radius: 25px;
+   margin: 3px;
+   width: 93px;
+   height: 90px;
    font-size: 40px;
-   background-color: rgba(185, 193, 190, 0.941);
+   background-color: rgba(206, 97, 24, 0.941);
+   color: #fff;
    cursor: pointer;
 }
 
@@ -65,11 +61,8 @@ button:active{
     background-color: rgba(219, 225, 223, 0.941);
 }
 
-.cleanAll,#cero {
-    width: 6.7rem;
-}
 
 
 .operator, .cleanAll, .clean {
-    background-color: rgb(255, 0, 0);
+    background: linear-gradient(rgb(186, 177, 240),rgb(138, 90, 228) );
 }
